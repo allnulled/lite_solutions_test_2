@@ -150,10 +150,10 @@ td {
 .tell_us_section_treatment_input { @include input_style_1; }
 .tell_us_section_treatment_textarea { @include textarea_style_1; }
 .share_experience_button { @include rounded_button; border-radius: 25pt; padding-top: 15px; padding-bottom: 15px; text-transform: uppercase; }
-.more_experiences_title { @include font_style_5; color: #383B41; float: left; }
-.more_experiencies_section_header {  }
-.see_all_text { @include font_style_9; font-size: 12px; float: right; }
-.user_comment { @include font_style_5; color: #000000; }
+.more_experiences_title { @include font_style_5; color: #383B41; white-space: nowrap; }
+.more_experiencies_section_header { display: table; width: 100%; }
+.see_all_text { @include font_style_9; display: table-cell; text-align: right; font-size: 12px; white-space: nowrap; }
+.user_comment { @include font_style_5; display: table-cell; color: #000000; }
 .user_name { @include font_style_9; font-size: 11px; }
 .comment_counter { color: #e78d45; font-size: 11px; float: left; }
 .read_more_text { color: #e78d45; font-size: 11px; float: right; }
@@ -164,7 +164,9 @@ td {
 .width_1x100 { width: 1%; }
 .no_break_word { white-space: nowrap; }
 .break_word { white-space: normal; }
-
+.display_table { display: table; }
+.display_table_cell { display: table-cell; }
+.vertical_align_top { vertical-align: top; }
 
 .padding_top_1 { padding-top: 4px; }
 .padding_bottom_1 { padding-bottom: 4px; }
@@ -197,3 +199,19 @@ td {
 .padding_horizontal_3 { padding-left: 12px; padding-right: 12px; }
 .padding_horizontal_4 { padding-left: 16px; padding-right: 16px; }
 
+@media screen and (min-width: 481px) {
+    .panels_wrapper {
+        display: table;
+    }
+    .panel_main {
+        display: table-cell;
+        width: 75%;
+        vertical-align: top;
+    }
+    .panel_secondary {
+        display: table-cell;
+        width: 25%;
+        vertical-align: top;
+        min-width: 200px;
+    }
+}

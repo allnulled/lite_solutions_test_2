@@ -144,6 +144,7 @@ export default {
     created() {},
     beforeMount() {},
     mounted() {
+        // Pongo un delay de un segundo para ver que se puede cargar asíncronamente.
         setTimeout(() => {
             this.user_comments = comentarios_asincronos.filter(comment => comment.comments > 20);
         }, 1000);

@@ -1,10 +1,16 @@
 <template>
   <div>
-    <SeccionTestimonioDeUsuario :page="this" />
-    <SeccionGaleria :page="this" />
-    <SeccionSobreElDoctor :page="this" />
-    <SeccionCuentanosTuExperiencia :page="this" />
-    <SeccionMasExperiencias :page="this" />
+    <div class="panels_wrapper">
+      <main class="panel_main">
+        <SeccionTestimonioDeUsuario :page="this" />
+        <SeccionGaleria :page="this" />
+        <SeccionSobreElDoctor :page="this" />
+        <SeccionCuentanosTuExperiencia :page="this" />
+      </main>
+      <aside class="panel_secondary">
+        <SeccionMasExperiencias :page="this" />
+      </aside>
+    </div>
   </div>
 </template>
 <script>
