@@ -17,7 +17,11 @@
  * 
  *************************************************************************/
 
- const SETTINGS = {
+const commitMessage = process.argv.pop();
+if(commitMessage.endsWith("upload-to-ghpages.js")) {
+	throw new Error("Missing commit message, you must provide 1 string argument to dev/upload-to-ghpages.js");
+}
+const SETTINGS = {
 	gitRepositoryURL: require(__dirname + "/../package.json").repository.url.replace(/^git\+/g,""),
 	temporaryFolder: __dirname + "/../temporary",
 	distributionFolder: __dirname + "/../dist",
@@ -56,7 +60,7 @@ const removeTemporary = function() {
 // 5. PUBLISH DIST FOLDER TO GH-PAGES BRANCH:
 const publishToGHPages = function() {
 	exec("git add .", { cwd: SETTINGS.distributionFolder });
-	exec("git commit", { cwd: SETTINGS.distributionFolder });
+	exec("git commit -m " + JSON.stringify(commitMessage), { cwd: SETTINGS.distributionFolder });
 	exec("git push", { cwd: SETTINGS.distributionFolder });
 };
 console.log("[UPLOADING APPLICATION TO GH-PAGES]");

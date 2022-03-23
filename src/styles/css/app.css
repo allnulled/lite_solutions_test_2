@@ -312,6 +312,7 @@ input, button, select, textarea {
   text-align: right;
   font-size: 12px;
   white-space: nowrap;
+  padding-left: 36px;
 }
 
 .user_comment {

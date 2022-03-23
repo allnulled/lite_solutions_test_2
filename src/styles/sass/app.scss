@@ -175,7 +175,7 @@ input, button, select, textarea {
 .share_experience_button { @include rounded_button; border-radius: 25pt; padding-top: 15px; padding-bottom: 15px; text-transform: uppercase; }
 .more_experiences_title { @include font_style_5; color: #383B41; white-space: nowrap; }
 .more_experiencies_section_header { display: table; width: 100%; }
-.see_all_text { @include font_style_9; display: table-cell; text-align: right; font-size: 12px; white-space: nowrap; }
+.see_all_text { @include font_style_9; display: table-cell; text-align: right; font-size: 12px; white-space: nowrap; padding-left: 36px; }
 .user_comment { @include font_style_5; display: table-cell; color: #000000; }
 .user_name { @include font_style_9; font-size: 11px; }
 .comment_counter { color: #e78d45; font-size: 11px; float: left; }
