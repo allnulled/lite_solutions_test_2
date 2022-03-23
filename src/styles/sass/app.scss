@@ -24,6 +24,7 @@ td {
     vertical-align: middle;
 }
 
+
 @mixin background_blue_sky_1 {
     background-color: #19b5bc;
 }
@@ -44,7 +45,7 @@ td {
     color: #666;
 }
 @mixin font_style_3 {
-    font-size: 21px;
+    font-size: 28px;
     font-weight: bold;
 }
 @mixin font_style_4 {
@@ -53,23 +54,23 @@ td {
 }
 @mixin font_style_5 {
     font-weight: bold;
-    font-size: 17px;
+    font-size: 18px;
 }
 @mixin font_style_6 {
     font-size: 14px;
     font-weight: bold;
 }
 @mixin font_style_7 {
-    font-size: 10px;
+    font-size: 14px;
     color: #666;
 }
 @mixin font_style_8 {
     color: white;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
 }
 @mixin font_style_9 {
-    font-size: 12px;
+    font-size: 14px;
     color: #000;
 }
 @mixin rounded_borders {
@@ -102,7 +103,7 @@ td {
     background-color: #FFFFFF;
     color: #AAAAAA;
     font-style: italic;
-    font-size: 12px;
+    font-size: 14px;
 }
 @mixin selector_style_1 {
     @include form_control_style_1;
@@ -118,7 +119,7 @@ td {
 .user_profile_image { @include image; width: 45px; height: 45px; }
 .user_details_name { @include font_style_1; }
 .user_details_location { @include font_style_2; }
-.comment_title { @include font_style_3; }
+.comment_title { @include font_style_3; color: #383B41; }
 .thumbs_up_image_wrapper { @include circled; width: 15px; height: 15px; }
 .thumbs_up_image { @include image; width: 15px; height: 15px; }
 .thumbs_up_comment { @include font_style_4; }
@@ -126,11 +127,11 @@ td {
 .euros_image { @include image; width: 15px; height: 15px; }
 .price_details { @include font_style_2; }
 .gallery {  }
-.gallery_image_wrapper { @include rounded_borders; display: inline-block; width: 153px; height: 153px; padding: 10px; }
+.gallery_image_wrapper { @include rounded_borders; display: inline-block; width: 153px; height: 153px; margin-top: 10px; margin-right: 10px; }
 .gallery_image { @include rounded_borders; display: inline-block; width: 153px; height: 153px; }
 .about_doctor_title { @include font_style_5; }
-.doctor_image_wrapper { @include rounded_borders; width: 70px; height: 70px; }
-.doctor_image { @include rounded_borders; width: 70px; height: 70px; }
+.doctor_image_wrapper { @include rounded_borders; width: 63px; height: 63px; }
+.doctor_image { @include rounded_borders; width: 63px; height: 63px; }
 .doctor_details {  }
 .doctor_details_primary { @include font_style_6; }
 .doctor_details_secondary { @include font_style_7; }
@@ -149,19 +150,50 @@ td {
 .tell_us_section_treatment_input { @include input_style_1; }
 .tell_us_section_treatment_textarea { @include textarea_style_1; }
 .share_experience_button { @include rounded_button; border-radius: 25pt; padding-top: 15px; padding-bottom: 15px; text-transform: uppercase; }
-.more_experiences_title { @include font_style_5; color: #101010; float: left; }
+.more_experiences_title { @include font_style_5; color: #383B41; float: left; }
 .more_experiencies_section_header {  }
 .see_all_text { @include font_style_9; font-size: 12px; float: right; }
-.user_comment { @include font_style_5; color: #333333; }
+.user_comment { @include font_style_5; color: #000000; }
 .user_name { @include font_style_9; font-size: 11px; }
 .comment_counter { color: #e78d45; font-size: 11px; float: left; }
 .read_more_text { color: #e78d45; font-size: 11px; float: right; }
-.user_comment_card { background-color: #FFFFFF; border: 1px solid #EEEEEE; margin-bottom: 10px; border-radius: 2pt; padding: 10px; }
+.user_comment_card { background-color: #FFFFFF; border: 1px solid #EEEEEE; margin-bottom: 10px; border-radius: 3pt; padding: 10px; }
 
 .clear_both { clear: both; }
-.padding_top_1 { padding-top: 10px; }
-.padding_top_2 { padding-top: 20px; }
-.padding_top_3 { padding-top: 30px; }
 .width_100x100 { width: 100%; }
 .width_1x100 { width: 1%; }
 .no_break_word { white-space: nowrap; }
+.break_word { white-space: normal; }
+
+
+.padding_top_1 { padding-top: 4px; }
+.padding_bottom_1 { padding-bottom: 4px; }
+.padding_left_1 { padding-left: 4px; }
+.padding_right_1 { padding-right: 4px; }
+
+.padding_top_2 { padding-top: 8px; }
+.padding_bottom_2 { padding-bottom: 8px; }
+.padding_left_2 { padding-left: 8px; }
+.padding_right_2 { padding-right: 8px; }
+
+.padding_top_3 { padding-top: 12px; }
+.padding_bottom_3 { padding-bottom: 12px; }
+.padding_left_3 { padding-left: 12px; }
+.padding_right_3 { padding-right: 12px; }
+
+.padding_top_4 { padding-top: 16px; }
+.padding_bottom_4 { padding-bottom: 16px; }
+.padding_left_4 { padding-left: 16px; }
+.padding_right_4 { padding-right: 16px; }
+
+.padding_vertical_1 { padding-top: 4px; padding-bottom: 4px; }
+.padding_vertical_2 { padding-top: 8px; padding-bottom: 8px; }
+.padding_vertical_3 { padding-top: 12px; padding-bottom: 12px; }
+.padding_vertical_4 { padding-top: 16px; padding-bottom: 16px; }
+.padding_vertical_8 { padding-top: 32px; padding-bottom: 32px; }
+
+.padding_horizontal_1 { padding-left: 4px; padding-right: 4px; }
+.padding_horizontal_2 { padding-left: 8px; padding-right: 8px; }
+.padding_horizontal_3 { padding-left: 12px; padding-right: 12px; }
+.padding_horizontal_4 { padding-left: 16px; padding-right: 16px; }
+

@@ -53,8 +53,9 @@ td {
 }
 
 .comment_title {
-  font-size: 21px;
+  font-size: 28px;
   font-weight: bold;
+  color: #383B41;
 }
 
 .thumbs_up_image_wrapper {
@@ -101,7 +102,8 @@ td {
   display: inline-block;
   width: 153px;
   height: 153px;
-  padding: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .gallery_image {
@@ -114,21 +116,21 @@ td {
 
 .about_doctor_title {
   font-weight: bold;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .doctor_image_wrapper {
   border-radius: 3pt;
   overflow: hidden;
-  width: 70px;
-  height: 70px;
+  width: 63px;
+  height: 63px;
 }
 
 .doctor_image {
   border-radius: 3pt;
   overflow: hidden;
-  width: 70px;
-  height: 70px;
+  width: 63px;
+  height: 63px;
 }
 
 .doctor_details_primary {
@@ -137,14 +139,14 @@ td {
 }
 
 .doctor_details_secondary {
-  font-size: 10px;
+  font-size: 14px;
   color: #666;
 }
 
 .contact_doctor_button {
   color: white;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   background-color: #19b5bc;
   border-radius: 18pt;
   padding: 10px;
@@ -179,17 +181,17 @@ td {
 }
 
 .rating_comment {
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
 }
 
 .tell_us_section_title {
   font-weight: bold;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .tell_us_section_question {
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
 }
 
@@ -202,7 +204,7 @@ td {
   background-color: #FFFFFF;
   color: #AAAAAA;
   font-style: italic;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .circled_button_wrapper {
@@ -240,7 +242,7 @@ td {
   background-color: #FFFFFF;
   color: #AAAAAA;
   font-style: italic;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .tell_us_section_treatment_textarea {
@@ -252,13 +254,13 @@ td {
   background-color: #FFFFFF;
   color: #AAAAAA;
   font-style: italic;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .share_experience_button {
   color: white;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   background-color: #19b5bc;
   border-radius: 18pt;
   padding: 10px;
@@ -274,13 +276,13 @@ td {
 
 .more_experiences_title {
   font-weight: bold;
-  font-size: 17px;
-  color: #101010;
+  font-size: 18px;
+  color: #383B41;
   float: left;
 }
 
 .see_all_text {
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
   font-size: 12px;
   float: right;
@@ -288,12 +290,12 @@ td {
 
 .user_comment {
   font-weight: bold;
-  font-size: 17px;
-  color: #333333;
+  font-size: 18px;
+  color: #000000;
 }
 
 .user_name {
-  font-size: 12px;
+  font-size: 14px;
   color: #000;
   font-size: 11px;
 }
@@ -314,24 +316,12 @@ td {
   background-color: #FFFFFF;
   border: 1px solid #EEEEEE;
   margin-bottom: 10px;
-  border-radius: 2pt;
+  border-radius: 3pt;
   padding: 10px;
 }
 
 .clear_both {
   clear: both;
-}
-
-.padding_top_1 {
-  padding-top: 10px;
-}
-
-.padding_top_2 {
-  padding-top: 20px;
-}
-
-.padding_top_3 {
-  padding-top: 30px;
 }
 
 .width_100x100 {
@@ -344,6 +334,119 @@ td {
 
 .no_break_word {
   white-space: nowrap;
+}
+
+.break_word {
+  white-space: normal;
+}
+
+.padding_top_1 {
+  padding-top: 4px;
+}
+
+.padding_bottom_1 {
+  padding-bottom: 4px;
+}
+
+.padding_left_1 {
+  padding-left: 4px;
+}
+
+.padding_right_1 {
+  padding-right: 4px;
+}
+
+.padding_top_2 {
+  padding-top: 8px;
+}
+
+.padding_bottom_2 {
+  padding-bottom: 8px;
+}
+
+.padding_left_2 {
+  padding-left: 8px;
+}
+
+.padding_right_2 {
+  padding-right: 8px;
+}
+
+.padding_top_3 {
+  padding-top: 12px;
+}
+
+.padding_bottom_3 {
+  padding-bottom: 12px;
+}
+
+.padding_left_3 {
+  padding-left: 12px;
+}
+
+.padding_right_3 {
+  padding-right: 12px;
+}
+
+.padding_top_4 {
+  padding-top: 16px;
+}
+
+.padding_bottom_4 {
+  padding-bottom: 16px;
+}
+
+.padding_left_4 {
+  padding-left: 16px;
+}
+
+.padding_right_4 {
+  padding-right: 16px;
+}
+
+.padding_vertical_1 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.padding_vertical_2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.padding_vertical_3 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.padding_vertical_4 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.padding_vertical_8 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.padding_horizontal_1 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.padding_horizontal_2 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.padding_horizontal_3 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.padding_horizontal_4 {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -9,44 +9,46 @@
             </div>
         </div>
         <div class="clear_both"></div>
-        <div>
-            <div class="user_comment_card" v-for="(user_comment, user_comment_index) in user_comments" v-bind:key="'comment-' + user_comment_index">
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="user_profile_image_wrapper">
-                                    <img class="user_profile_image"
-                                        :src="user_comment.owner.picture" alt="" />
-                                </div>
-                            </td>
-                            <td class="width_100x100">
-                                <div class="user_comment">
-                                    {{ user_comment.text }}
-                                </div>
-                                <div class="user_name">
-                                    {{ user_comment.owner.firstName }} {{ user_comment.owner.lastName }}
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="comment_counter">
-                                    {{ user_comment.comments }} comentarios
-                                </div>
-                            </td>
-                            <td>
-                                <div class="read_more_text">
-                                    leer más &gt;
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="padding_vertical_4">
+            <div class="padding_bottom_4" v-for="(user_comment, user_comment_index) in user_comments" v-bind:key="'comment-' + user_comment_index">
+                <div class="user_comment_card">
+                    <table class="break_word">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="user_profile_image_wrapper">
+                                        <img class="user_profile_image"
+                                            :src="user_comment.owner.picture" alt="" />
+                                    </div>
+                                </td>
+                                <td class="width_100x100">
+                                    <div class="user_comment">
+                                        {{ user_comment.text }}
+                                    </div>
+                                    <div class="user_name">
+                                        {{ user_comment.owner.firstName }} {{ user_comment.owner.lastName }}
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="comment_counter">
+                                        {{ user_comment.comments }} comentarios
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="read_more_text">
+                                        leer más &gt;
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

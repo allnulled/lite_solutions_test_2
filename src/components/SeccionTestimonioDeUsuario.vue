@@ -1,6 +1,6 @@
 <template>
     <div class="component SeccionTestimonioDeUsuario">
-        <div>
+        <div class="padding_top_4">
             <table>
                 <tbody>
                     <tr>
@@ -25,8 +25,10 @@
                 </tbody>
             </table>
         </div>
-        <div class="comment_title">Estoy muy orgullosa de mi nuevo abdomen</div>
-        <div>
+        <div class="padding_top_4">
+            <div class="comment_title">Estoy muy orgullosa de mi nuevo abdomen</div>
+        </div>
+        <div class="padding_top_4">
             <div>
                 <table>
                     <tbody>

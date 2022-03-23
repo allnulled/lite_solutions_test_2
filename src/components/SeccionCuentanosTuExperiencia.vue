@@ -1,10 +1,10 @@
 <template>
   <div class="component SeccionCuentanosTuExperiencia">
-        <div class="tell_us_section_title">
+        <div class="tell_us_section_title padding_top_2 padding_bottom_4">
             Cuéntanos tu experiencia
         </div>
-        <div>
-            <div class="tell_us_section_question">
+        <div class="padding_vertical_3">
+            <div class="tell_us_section_question padding_bottom_1">
                 ¿Qué tratamiento te has realizado?
             </div>
             <div>
@@ -13,8 +13,8 @@
                 </select>
             </div>
         </div>
-        <div>
-            <div class="tell_us_section_question">
+        <div class="padding_vertical_3">
+            <div class="tell_us_section_question padding_bottom_2">
                 ¿Recomendarías el tratamiento?
             </div>
             <div>
@@ -31,16 +31,16 @@
             </div>
         </div>
         <div>
-            <div>
-                <div class="tell_us_section_question">
+            <div class="padding_vertical_3">
+                <div class="tell_us_section_question padding_bottom_1">
                     Título de tu experiencia
                 </div>
                 <div>
                     <input class="tell_us_section_treatment_input" type="text" placeholder="Título resumen de tu experiencia" />
                 </div>
             </div>
-            <div>
-                <div class="tell_us_section_question">
+            <div class="padding_top_3">
+                <div class="tell_us_section_question padding_bottom_1">
                     ¿Qué tratamiento te has realizado?
                 </div>
                 <div>
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div class="padding_vertical_8">
             <button class="share_experience_button">
                 ¡Compartir experiencia!
             </button>

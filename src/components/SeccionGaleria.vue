@@ -1,23 +1,25 @@
 <template>
     <div class="component SeccionGaleria">
-        <div class="gallery">
-            <div class="gallery_image_wrapper">
-                <img class="gallery_image" src="image/gallery_image_1.png" alt="" />
-            </div>
-            <div class="gallery_image_wrapper">
-                <img class="gallery_image" src="image/gallery_image_2.png" alt="" />
-            </div>
-            <div class="gallery_image_wrapper">
-                <img class="gallery_image" src="image/gallery_image_1.png" alt="" />
-            </div>
-            <div class="gallery_image_wrapper">
-                <img class="gallery_image" src="image/gallery_image_2.png" alt="" />
-            </div>
-            <div class="gallery_image_wrapper">
-                <img class="gallery_image" src="image/gallery_image_1.png" alt="" />
-            </div>
-            <div class="gallery_image_wrapper">
-                <img class="gallery_image" src="image/gallery_image_2.png" alt="" />
+        <div class="padding_vertical_3">
+            <div class="gallery">
+                <div class="gallery_image_wrapper">
+                    <img class="gallery_image" src="image/gallery_image_1.png" alt="" />
+                </div>
+                <div class="gallery_image_wrapper">
+                    <img class="gallery_image" src="image/gallery_image_2.png" alt="" />
+                </div>
+                <div class="gallery_image_wrapper">
+                    <img class="gallery_image" src="image/gallery_image_1.png" alt="" />
+                </div>
+                <div class="gallery_image_wrapper">
+                    <img class="gallery_image" src="image/gallery_image_2.png" alt="" />
+                </div>
+                <div class="gallery_image_wrapper">
+                    <img class="gallery_image" src="image/gallery_image_1.png" alt="" />
+                </div>
+                <div class="gallery_image_wrapper">
+                    <img class="gallery_image" src="image/gallery_image_2.png" alt="" />
+                </div>
             </div>
         </div>
     </div>
