@@ -1,24 +1,5 @@
-# dev
+# LiteSolutions test 2
 
-## Project setup
-```
-npm install
-```
+App:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+  - [https://allnulled.github.io/lite_solutions_test_2/index.html](https://allnulled.github.io/lite_solutions_test_2/index.html).
