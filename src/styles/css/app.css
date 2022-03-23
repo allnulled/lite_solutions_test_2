@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+@import '../css/iconography.css';
 * {
   box-sizing: border-box;
 }
@@ -8,6 +9,11 @@ html {
   padding: 0;
   color: #48545c;
   background-color: #f7f7f7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 html, button, select, input, textarea {
@@ -26,6 +32,14 @@ table {
 
 td {
   vertical-align: middle;
+}
+
+input, button, select, textarea {
+  cursor: pointer;
+}
+
+.panel_main_contents {
+  background-color: white;
 }
 
 .user_profile_image_wrapper {
@@ -63,6 +77,7 @@ td {
   overflow: hidden;
   width: 15px;
   height: 15px;
+  color: #25b9c0;
 }
 
 .thumbs_up_image {
@@ -141,6 +156,7 @@ td {
 .doctor_details_secondary {
   font-size: 14px;
   color: #666;
+  white-space: normal;
 }
 
 .contact_doctor_button {
@@ -166,6 +182,7 @@ td {
 
 .rating_stars_container {
   vertical-align: middle;
+  color: #ffd289;
 }
 
 .rating_star_wrapper {
@@ -202,7 +219,7 @@ td {
   border: 2px solid #EEEEEE;
   padding: 5px;
   background-color: #FFFFFF;
-  color: #AAAAAA;
+  color: #ACB5BC;
   font-style: italic;
   font-size: 14px;
 }
@@ -217,7 +234,6 @@ td {
 .circled_button {
   border-radius: 50%;
   overflow: hidden;
-  background-color: #19b5bc;
   color: white;
   font-weight: bold;
   border-radius: 50%;
@@ -225,12 +241,15 @@ td {
   width: 50px;
   height: 50px;
   margin-right: 10px;
-}
-
-.circled_button.empty_button {
   background-color: white;
   color: #666;
   border: 2px solid #CCCCCC;
+}
+
+.circled_button.selected {
+  background-color: #19b5bc;
+  color: #FFFFFF;
+  border: none;
 }
 
 .tell_us_section_treatment_input {
@@ -240,7 +259,7 @@ td {
   border: 2px solid #EEEEEE;
   padding: 5px;
   background-color: #FFFFFF;
-  color: #AAAAAA;
+  color: #ACB5BC;
   font-style: italic;
   font-size: 14px;
 }
@@ -252,7 +271,7 @@ td {
   border: 2px solid #EEEEEE;
   padding: 5px;
   background-color: #FFFFFF;
-  color: #AAAAAA;
+  color: #ACB5BC;
   font-style: italic;
   font-size: 14px;
 }
@@ -328,6 +347,33 @@ td {
   padding: 10px;
 }
 
+.validation_text {
+  font-size: 10px;
+  color: #666666;
+  text-align: right;
+}
+
+.validation_text.valid {
+  color: #19b5bc;
+}
+
+.validation_text.invalid {
+  color: red;
+}
+
+.error_text {
+  color: red;
+  font-size: 10px;
+}
+
+.form_control_error_icon {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
 .clear_both {
   clear: both;
 }
@@ -360,6 +406,10 @@ td {
   vertical-align: top;
 }
 
+.padding_1 {
+  padding: 4px;
+}
+
 .padding_top_1 {
   padding-top: 4px;
 }
@@ -374,6 +424,10 @@ td {
 
 .padding_right_1 {
   padding-right: 4px;
+}
+
+.padding_2 {
+  padding: 8px;
 }
 
 .padding_top_2 {
@@ -392,6 +446,10 @@ td {
   padding-right: 8px;
 }
 
+.padding_3 {
+  padding: 12px;
+}
+
 .padding_top_3 {
   padding-top: 12px;
 }
@@ -406,6 +464,10 @@ td {
 
 .padding_right_3 {
   padding-right: 12px;
+}
+
+.padding_4 {
+  padding: 16px;
 }
 
 .padding_top_4 {
@@ -469,7 +531,7 @@ td {
   padding-right: 16px;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .panels_wrapper {
     display: table;
   }
@@ -478,6 +540,7 @@ td {
     display: table-cell;
     width: 75%;
     vertical-align: top;
+    padding-right: 16px;
   }
 
   .panel_secondary {

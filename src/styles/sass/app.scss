@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import '../css/iconography.css';
+
 * {
     box-sizing: border-box;
 }
@@ -8,6 +10,10 @@ html {
   padding: 0;
   color: #48545c;
   background-color: #f7f7f7;
+}
+body {
+    margin: 0;
+    padding: 0;
 }
 html, button, select, input, textarea {
     font-family: Roboto;
@@ -23,10 +29,21 @@ table {
 td {
     vertical-align: middle;
 }
+input, button, select, textarea {
+    cursor: pointer;
+}
 
-
+@mixin color_blue_sky_1 {
+    color: #19b5bc;
+}
+@mixin color_red_1 {
+    color: red;
+}
 @mixin background_blue_sky_1 {
     background-color: #19b5bc;
+}
+@mixin background_color_red_1 {
+    background-color: red;
 }
 @mixin circled {
     border-radius: 50%;
@@ -73,6 +90,10 @@ td {
     font-size: 14px;
     color: #000;
 }
+@mixin font_style_10 {
+    font-size: 10px;
+    color: #666666;
+}
 @mixin rounded_borders {
     border-radius: 3pt;
     overflow: hidden;
@@ -88,7 +109,6 @@ td {
     padding-right: 30px;
 }
 @mixin circled_button_1 {
-    @include background_blue_sky_1;
     color: white;
     font-weight: bold;
     border-radius: 50%;
@@ -101,7 +121,7 @@ td {
     border: 2px solid #EEEEEE;
     padding: 5px;
     background-color: #FFFFFF;
-    color: #AAAAAA;
+    color: #ACB5BC;
     font-style: italic;
     font-size: 14px;
 }
@@ -115,12 +135,15 @@ td {
     @include form_control_style_1;
 }
 
+.panel_main {  }
+.panel_main_contents { background-color: white; }
+.panel_secondary {  }
 .user_profile_image_wrapper { @include circled; width: 45px; height: 45px; }
 .user_profile_image { @include image; width: 45px; height: 45px; }
 .user_details_name { @include font_style_1; }
 .user_details_location { @include font_style_2; }
 .comment_title { @include font_style_3; color: #383B41; }
-.thumbs_up_image_wrapper { @include circled; width: 15px; height: 15px; }
+.thumbs_up_image_wrapper { @include circled; width: 15px; height: 15px; color: #25b9c0; }
 .thumbs_up_image { @include image; width: 15px; height: 15px; }
 .thumbs_up_comment { @include font_style_4; }
 .euros_image_wrapper { @include circled; width: 15px; height: 15px; margin-left: 30px; }
@@ -134,10 +157,10 @@ td {
 .doctor_image { @include rounded_borders; width: 63px; height: 63px; }
 .doctor_details {  }
 .doctor_details_primary { @include font_style_6; }
-.doctor_details_secondary { @include font_style_7; }
+.doctor_details_secondary { @include font_style_7; white-space: normal; }
 .contact_doctor_button { @include rounded_button; }
 .rating_title { @include font_style_6; vertical-align: middle; padding-top: 7px; padding-right: 10px; }
-.rating_stars_container { vertical-align: middle; }
+.rating_stars_container { vertical-align: middle; color: #ffd289; }
 .rating_star_wrapper { @include image; width: 25px; height: 25px; }
 .rating_star_image { @include image; width: 25px; height: 25px; }
 .rating_comment { @include font_style_9; }
@@ -145,8 +168,8 @@ td {
 .tell_us_section_question { @include font_style_9; }
 .tell_us_section_treatment_selector { @include selector_style_1; }
 .circled_button_wrapper { @include circled; width: 60px; height: 60px; }
-.circled_button { @include circled; @include circled_button_1; width: 50px; height: 50px; margin-right: 10px; }
-.circled_button.empty_button { background-color: white; color: #666; border: 2px solid #CCCCCC; }
+.circled_button { @include circled; @include circled_button_1; width: 50px; height: 50px; margin-right: 10px; background-color: white; color: #666; border: 2px solid #CCCCCC; }
+.circled_button.selected { @include background_blue_sky_1; color: #FFFFFF; border: none; }
 .tell_us_section_treatment_input { @include input_style_1; }
 .tell_us_section_treatment_textarea { @include textarea_style_1; }
 .share_experience_button { @include rounded_button; border-radius: 25pt; padding-top: 15px; padding-bottom: 15px; text-transform: uppercase; }
@@ -158,6 +181,11 @@ td {
 .comment_counter { color: #e78d45; font-size: 11px; float: left; }
 .read_more_text { color: #e78d45; font-size: 11px; float: right; }
 .user_comment_card { background-color: #FFFFFF; border: 1px solid #EEEEEE; margin-bottom: 10px; border-radius: 3pt; padding: 10px; }
+.validation_text { @include font_style_10; text-align: right; }
+.validation_text.valid { @include color_blue_sky_1; }
+.validation_text.invalid { @include color_red_1; }
+.error_text { @include color_red_1; font-size: 10px; }
+.form_control_error_icon { @include background_color_red_1; color: white; border-radius: 50%; width: 10px; height: 10px; }
 
 .clear_both { clear: both; }
 .width_100x100 { width: 100%; }
@@ -168,21 +196,25 @@ td {
 .display_table_cell { display: table-cell; }
 .vertical_align_top { vertical-align: top; }
 
+.padding_1 { padding: 4px; }
 .padding_top_1 { padding-top: 4px; }
 .padding_bottom_1 { padding-bottom: 4px; }
 .padding_left_1 { padding-left: 4px; }
 .padding_right_1 { padding-right: 4px; }
 
+.padding_2 { padding: 8px; }
 .padding_top_2 { padding-top: 8px; }
 .padding_bottom_2 { padding-bottom: 8px; }
 .padding_left_2 { padding-left: 8px; }
 .padding_right_2 { padding-right: 8px; }
 
+.padding_3 { padding: 12px; }
 .padding_top_3 { padding-top: 12px; }
 .padding_bottom_3 { padding-bottom: 12px; }
 .padding_left_3 { padding-left: 12px; }
 .padding_right_3 { padding-right: 12px; }
 
+.padding_4 { padding: 16px; }
 .padding_top_4 { padding-top: 16px; }
 .padding_bottom_4 { padding-bottom: 16px; }
 .padding_left_4 { padding-left: 16px; }
@@ -199,7 +231,7 @@ td {
 .padding_horizontal_3 { padding-left: 12px; padding-right: 12px; }
 .padding_horizontal_4 { padding-left: 16px; padding-right: 16px; }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
     .panels_wrapper {
         display: table;
     }
@@ -207,6 +239,7 @@ td {
         display: table-cell;
         width: 75%;
         vertical-align: top;
+        padding-right: 16px;
     }
     .panel_secondary {
         display: table-cell;

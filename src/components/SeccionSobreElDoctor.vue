@@ -31,39 +31,19 @@
             <span class="rating_title">Valoración:</span>
             <span class="rating_stars_container">
                 <span class="rating_star_wrapper">
-                    <img
-                        class="rating_star_image"
-                        src="image/star_full.png"
-                        alt=""
-                    />
+                    <span class="icon-et-recommendations_star_fill"></span>
                 </span>
                 <span class="rating_star_wrapper">
-                    <img
-                        class="rating_star_image"
-                        src="image/star_full.png"
-                        alt=""
-                    />
+                    <span class="icon-et-recommendations_star_fill"></span>
                 </span>
                 <span class="rating_star_wrapper">
-                    <img
-                        class="rating_star_image"
-                        src="image/star_full.png"
-                        alt=""
-                    />
+                    <span class="icon-et-recommendations_star_fill"></span>
                 </span>
                 <span class="rating_star_wrapper">
-                    <img
-                        class="rating_star_image"
-                        src="image/star_full.png"
-                        alt=""
-                    />
+                    <span class="icon-et-recommendations_star_fill"></span>
                 </span>
                 <span class="rating_star_wrapper">
-                    <img
-                        class="rating_star_image"
-                        src="image/star_empty.png"
-                        alt=""
-                    />
+                    <span class="icon-et-recommendations_star"></span>
                 </span>
             </span>
             <div class="rating_comment padding_vertical_4">

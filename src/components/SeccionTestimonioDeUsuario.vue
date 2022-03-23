@@ -7,6 +7,7 @@
                         <td>
                             <div class="user_profile_image_wrapper">
                                 <img
+                                    v-if="user_image"
                                     class="user_profile_image"
                                     :src="user_image"
                                     alt=""
@@ -76,7 +77,7 @@ export default {
     props: {},
     data() {
         return {
-            user_image: "image/default.png",
+            user_image: "",
         };
     },
     beforeCreate() {},

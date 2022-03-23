@@ -1,11 +1,13 @@
 <template>
   <div>
     <div class="panels_wrapper">
-      <main class="panel_main">
-        <SeccionTestimonioDeUsuario :page="this" />
-        <SeccionGaleria :page="this" />
-        <SeccionSobreElDoctor :page="this" />
-        <SeccionCuentanosTuExperiencia :page="this" />
+      <main class="panel_main padding_1">
+        <div class="panel_main_contents padding_1">
+          <SeccionTestimonioDeUsuario :page="this" />
+          <SeccionGaleria :page="this" />
+          <SeccionSobreElDoctor :page="this" />
+          <SeccionCuentanosTuExperiencia :page="this" />
+        </div>
       </main>
       <aside class="panel_secondary">
         <SeccionMasExperiencias :page="this" />

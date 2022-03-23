@@ -1,5 +1,5 @@
 <template>
-    <div class="more_experiences_section component SeccionMasExperiencias">
+    <div class="more_experiences_section component SeccionMasExperiencias padding_2">
         <div class="more_experiencies_section_header">
             <div class="more_experiences_title">
                 Más experiencias
@@ -9,8 +9,8 @@
             </div>
         </div>
         <div class="clear_both"></div>
-        <div class="padding_vertical_4">
-            <div class="padding_bottom_4" v-for="(user_comment, user_comment_index) in user_comments" v-bind:key="'comment-' + user_comment_index">
+        <div class="padding_vertical_3">
+            <div class="padding_bottom_3" v-for="(user_comment, user_comment_index) in user_comments" v-bind:key="'comment-' + user_comment_index">
                 <div class="user_comment_card">
                     <table class="break_word">
                         <tbody>
